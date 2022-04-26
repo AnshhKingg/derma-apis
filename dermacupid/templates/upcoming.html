@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+	<title>Derma Cupid</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content=""/>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/jquery.countdown.css' %}" />
+
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+	<!-- //web-fonts -->
+</head>
+
+<body>
+	<div class="">
+		<!-- title -->
+		<h1>
+			Derma Cupid Coming Soon</h1>
+		<!-- //title -->
+		<!-- content -->
+		<div class="sub-main-w3">
+			<!--timer-->
+			<!--//timer-->
+			<div class="wthree-info">
+
+
+				<p>We’re getting ready to launch in</p>
+<!--timer-->
+			<div class="examples">
+				<div class="simply-countdown-losange" id="simply-countdown-losange"></div>
+				<div class="clear"></div>
+			</div>
+			<!--//timer-->
+			{% comment %}
+			<p class="noti">Stay tuned and subscribe to our newsletter</p>
+			<!--newsletter-->
+			<div class="newsletter">
+				<form action="#" method="post" class="newsletter">
+					<input class="email" type="email" placeholder="Email..." required="">
+					<input type="submit" class="submit" value="Subscribe">
+				</form>
+
+            </div>
+
+			{% endcomment %}
+			<!--//newsletter-->
+			<!--<div class="agileinfo-social-grids">
+					<ul>
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-rss"></a></li>
+						<li><a href="#" class="fa fa-vk"></a></li>
+					</ul>
+				</div>-->
+			</div>
+		</div>
+		<!-- //content -->
+
+		<!-- copyright -->
+		<div class="footer">
+			<p>&copy; 2022
+			</p>
+		</div>
+		<!-- //copyright -->
+	</div>
+
+	<!-- Jquery -->
+<script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+
+	<!-- //Jquery -->
+<!-- Countdown-Timer-JavaScript -->
+	<script src="{% static 'js/simplyCountdown.js' %}"></script>
+	<!-- easy to customize -->
+	<script>
+		$('#simply-countdown-losange').simplyCountdown({
+			year: 2022,
+			month: 06,
+			day: 09
+		});
+	</script>
+	<!-- //Countdown-Timer-JavaScript -->
+
+
+</body>
+
+</html>
